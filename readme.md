@@ -179,7 +179,7 @@ A state value function is defined using a specific policy, making the _expected 
 
 ### Action-Value Function
 
-An action-value of a state is the _expected return_ of an agents choosen action, according to a policy:
+More commonly known as the _Q Function_, an action-value of a state is the _expected return_ of an agents choosen action, according to a policy:
 
 ![Action-Value Function](/imgs/action-value-function.jpg)
 
