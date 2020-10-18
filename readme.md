@@ -73,7 +73,7 @@ Every cell in a row, `i`, and a column, `j`, in the matrix contains the probabil
 
   If sunny, there is an 80% chance that the next day will be sunny.
 
-__Markov Reward Process (MRP)__: for every episode, define the return at time (_t_), using a discount factor ($\gamma$) between 0 and 1, and return the cumulative reward.
+__Markov Reward Process (MRP)__: for every episode, define the return at time (_t_), using a discount factor (<img src="https://render.githubusercontent.com/render/math?math={\gamma}">) between 0 and 1, and return the cumulative reward.
 
 ![MRP stretched calculation](/imgs/mrp-one.jpg)
 
@@ -81,7 +81,7 @@ The above is equivalent to:
 
 ![MRP sum calculation](/imgs/mrp-two.jpg)
 
-The larger $\gamma$ the smaller the discount, making the agent care more about its long term reward.
+The larger <img src="https://render.githubusercontent.com/render/math?math={\gamma}"> the smaller the discount, making the agent care more about its long term reward.
 
 __Markov Decision Process (MDP)__: an MRP with decisions that has an environment where all its states are Markov Processes.
 
@@ -95,11 +95,11 @@ The transition matrix contains:
 
 When choosing an action, the agent can affect the probabilities of target states.
 
-__Policy__ (<img src="https://render.githubusercontent.com/render/math?math={pi}">): a set of rules that controls the agent's behaviour (the brain of the agent). A function that informs us what _action to take given the state we are in_.
+__Policy__ (<img src="https://render.githubusercontent.com/render/math?math={\pi}">): a set of rules that controls the agent's behaviour (the brain of the agent). A function that informs us what _action to take given the state we are in_.
 
 The policy is the _function_ that needs to be learned, finding the optimal policy we can maximize the _expected return_. This is found through training.
 
-There are two approaches to training the agent to find the optimal policy $\pi$*:
+There are two approaches to training the agent to find the optimal policy <img src="https://render.githubusercontent.com/render/math?math={\pi}">*:
 
 - __Directly__: by teaching the agent to learn which action to take. This is a _Policy-Based Method_.
 - __Indirectly__: by teaching the agent to learn which state is more valuable and then take the action that leads to the more valuable states. This is a _Value-Based Method_.
@@ -151,8 +151,8 @@ __Policy-based__: methods that approximate the policy of an agent by learning a 
 
 Comes in two forms:
 
-- __Deterministic__:  _a = <img src="https://render.githubusercontent.com/render/math?math={pi}">(s)_, at a given state, always return the same action.
-- __Stochastic__: _<img src="https://render.githubusercontent.com/render/math?math={pi}">(a|s)  = P[A<sub>t</sub> = a|S<sub>t</sub> = s]_, outputs a probability distribution over the set of possible actions at that state.
+- __Deterministic__:  _a = <img src="https://render.githubusercontent.com/render/math?math={\pi}">(s)_, at a given state, always return the same action.
+- __Stochastic__: _<img src="https://render.githubusercontent.com/render/math?math={\pi}">(a|s)  = P[A<sub>t</sub> = a|S<sub>t</sub> = s]_, outputs a probability distribution over the set of possible actions at that state.
 
 ### On-Policy vs Off-Policy
 
@@ -175,12 +175,12 @@ These allow an agent to identify the quality of its current state, rather than w
 
 A state value function is defined using a specific policy, making the _expected return_ depend on the policy:
 
-V<sub><img src="https://render.githubusercontent.com/render/math?math={pi}"></sub>(s) = <img src="https://render.githubusercontent.com/render/math?math={mathbb E}"><sub><img src="https://render.githubusercontent.com/render/math?math={pi}"></sub>[G<sub>t</sub>|S<sub>t</sub> = s]
+V<sub><img src="https://render.githubusercontent.com/render/math?math={\pi}"></sub>(s) = <img src="https://render.githubusercontent.com/render/math?math={\E}"><sub><img src="https://render.githubusercontent.com/render/math?math={\pi}"></sub>[G<sub>t</sub>|S<sub>t</sub> = s]
 
 Key:
 
-- <img src="https://render.githubusercontent.com/render/math?math={mathbb E}"> = expected value
-- <img src="https://render.githubusercontent.com/render/math?math={pi}"> = dependency on the policy
+- <img src="https://render.githubusercontent.com/render/math?math={\E}"> = expected value
+- <img src="https://render.githubusercontent.com/render/math?math={\pi}"> = dependency on the policy
 - G<sub>t</sub> = expected return from a given state
 - S<sub>t</sub> = state at a given time step
 
@@ -188,7 +188,7 @@ Key:
 
 An action-value of a state is the _expected return_ of an agents choosen action, according to a policy:
 
-q<sub><img src="https://render.githubusercontent.com/render/math?math={pi}"></sub>(s, a) = <img src="https://render.githubusercontent.com/render/math?math={mathbb E}"><sub><img src="https://render.githubusercontent.com/render/math?math={pi}"></sub>[G<sub>t</sub>|S<sub>t</sub> = s, A<sub>t</sub> = a]
+q<sub><img src="https://render.githubusercontent.com/render/math?math={\pi}"></sub>(s, a) = <img src="https://render.githubusercontent.com/render/math?math={\E}"><sub><img src="https://render.githubusercontent.com/render/math?math={\pi}"></sub>[G<sub>t</sub>|S<sub>t</sub> = s, A<sub>t</sub> = a]
 
 ## References
 
