@@ -175,20 +175,13 @@ These allow an agent to identify the quality of its current state, rather than w
 
 A state value function is defined using a specific policy, making the _expected return_ depend on the policy:
 
-V<sub><img src="https://render.githubusercontent.com/render/math?math={\pi}"></sub>(s) = <img src="https://render.githubusercontent.com/render/math?math={\mathbb E}"><sub><img src="https://render.githubusercontent.com/render/math?math={\pi}"></sub>[G<sub>t</sub>|S<sub>t</sub> = s]
-
-Key:
-
-- <img src="https://render.githubusercontent.com/render/math?math={\mathbb E}"> = expected value
-- <img src="https://render.githubusercontent.com/render/math?math={\pi}"> = dependency on the policy
-- G<sub>t</sub> = expected return from a given state
-- S<sub>t</sub> = state at a given time step
+![State-Value Function](/imgs/state-value-function.jpg)
 
 ### Action-Value Function
 
 An action-value of a state is the _expected return_ of an agents choosen action, according to a policy:
 
-q<sub><img src="https://render.githubusercontent.com/render/math?math={\pi}"></sub>(s, a) = <img src="https://render.githubusercontent.com/render/math?math={\mathbb E}"><sub><img src="https://render.githubusercontent.com/render/math?math={\pi}"></sub>[G<sub>t</sub>|S<sub>t</sub> = s, A<sub>t</sub> = a]
+![Action-Value Function](/imgs/action-value-function.jpg)
 
 ## References
 
