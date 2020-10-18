@@ -22,7 +22,8 @@ It is a framework for solving control tasks, also known as decision problems.
 ## RL Process
 
 A basic example of the RL process can be seen below:
-![Communication Channels](..\deep_rl\imgs\comm-channels.jpg)
+
+![Communication Channels](/imgs/comm-channels.jpg)
 
 1. An agent receives a _state_, S<sub>t</sub>, from the environment.
 2. From that state, the agent takes an _action_, A<sub>t</sub>.
@@ -74,11 +75,11 @@ Every cell in a row, `i`, and a column, `j`, in the matrix contains the probabil
 
 __Markov Reward Process (MRP)__: for every episode, define the return at time (_t_), using a discount factor ($\gamma$) between 0 and 1, and return the cumulative reward.
 
-![MRP stretched calculation](..\deep_rl\imgs\mrp-one.jpg)
+![MRP stretched calculation](/imgs/mrp-one.jpg)
 
 The above is equivalent to:
 
-![MRP sum calculation](..\deep_rl\imgs\mrp-two.jpg)
+![MRP sum calculation](/imgs/mrp-two.jpg)
 
 The larger $\gamma$ the smaller the discount, making the agent care more about its long term reward.
 
