@@ -95,7 +95,7 @@ The transition matrix contains:
 
 When choosing an action, the agent can affect the probabilities of target states.
 
-__Policy__ ($\pi$): a set of rules that controls the agent's behaviour (the brain of the agent). A function that informs us what _action to take given the state we are in_.
+__Policy__ (<img src="https://render.githubusercontent.com/render/math?math={pi}">): a set of rules that controls the agent's behaviour (the brain of the agent). A function that informs us what _action to take given the state we are in_.
 
 The policy is the _function_ that needs to be learned, finding the optimal policy we can maximize the _expected return_. This is found through training.
 
@@ -151,8 +151,8 @@ __Policy-based__: methods that approximate the policy of an agent by learning a 
 
 Comes in two forms:
 
-- __Deterministic__:  _a = $\pi$(s)_, at a given state, always return the same action.
-- __Stochastic__: _$\pi$(a|s)  = P[A<sub>t</sub> = a|S<sub>t</sub> = s]_, outputs a probability distribution over the set of possible actions at that state.
+- __Deterministic__:  _a = <img src="https://render.githubusercontent.com/render/math?math={pi}">(s)_, at a given state, always return the same action.
+- __Stochastic__: _<img src="https://render.githubusercontent.com/render/math?math={pi}">(a|s)  = P[A<sub>t</sub> = a|S<sub>t</sub> = s]_, outputs a probability distribution over the set of possible actions at that state.
 
 ### On-Policy vs Off-Policy
 
@@ -173,14 +173,14 @@ These allow an agent to identify the quality of its current state, rather than w
 
 ### State-Value Function
 
-A state value function is defined using a specific policy, making the _expected return_ depend on the policy: 
+A state value function is defined using a specific policy, making the _expected return_ depend on the policy:
 
-V<sub>$\pi$</sub>(s) = $\mathbb E$<sub>$\pi$</sub>[G<sub>t</sub>|S<sub>t</sub> = s]
+V<sub><img src="https://render.githubusercontent.com/render/math?math={pi}"></sub>(s) = <img src="https://render.githubusercontent.com/render/math?math={mathbb E}"><sub><img src="https://render.githubusercontent.com/render/math?math={pi}"></sub>[G<sub>t</sub>|S<sub>t</sub> = s]
 
 Key:
 
-- $\mathbb E$ = expected value
-- $\pi$ = dependency on the policy
+- <img src="https://render.githubusercontent.com/render/math?math={mathbb E}"> = expected value
+- <img src="https://render.githubusercontent.com/render/math?math={pi}"> = dependency on the policy
 - G<sub>t</sub> = expected return from a given state
 - S<sub>t</sub> = state at a given time step
 
@@ -188,7 +188,7 @@ Key:
 
 An action-value of a state is the _expected return_ of an agents choosen action, according to a policy:
 
-q<sub>$\pi$</sub>(s, a) = $\mathbb E$<sub>$\pi$</sub>[G<sub>t</sub>|S<sub>t</sub> = s, A<sub>t</sub> = a]
+q<sub><img src="https://render.githubusercontent.com/render/math?math={pi}"></sub>(s, a) = <img src="https://render.githubusercontent.com/render/math?math={mathbb E}"><sub><img src="https://render.githubusercontent.com/render/math?math={pi}"></sub>[G<sub>t</sub>|S<sub>t</sub> = s, A<sub>t</sub> = a]
 
 ## References
 
