@@ -22,7 +22,7 @@ This section provides useful links to different components of RL, which are spli
 
 - [Policies](https://github.com/Achronus/Reinforcement-Learning/wiki/Policies)
 - [Value Functions](https://github.com/Achronus/Reinforcement-Learning/wiki/Value-Functions)
-- Models - _Coming Soon!_
+- [Models](https://github.com/Achronus/Reinforcement-Learning/wiki/Models)
 - [Learning Approaches](https://github.com/Achronus/Reinforcement-Learning/wiki/Learning-Approaches)
 
 ## References
