@@ -27,7 +27,7 @@ This section provides useful links to different components of RL, which are spli
 
 ## References
 
-This contains a list of references for the information within this repo.
+This section contains a list of references for the information within this repository, which is made up of books, courses, blog posts and research papers that have been useful to me.
 
 ### Books
 
